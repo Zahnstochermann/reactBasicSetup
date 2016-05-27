@@ -1,10 +1,10 @@
 # reactBasicSetup
 This Repo Contains a basic React Setup with npm-modules for React, Babel and Webpack as well as a general project structure.
 Also included:
-* [react-fontawesome](https://www.npmjs.com/package/react-fontawesome)
+* [font-awesome](https://www.npmjs.com/package/font-awesome)
 * [materialize-css](http://materializecss.com/)
 
-Further package informations: See package.json
+Further package informations: See [package.json](https://github.com/Zahnstochermann/reactBasicSetup/blob/master/package.json)
 
 # How to run this thing locally:
 * Make sure [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) is installed.
