@@ -1,7 +1,9 @@
 var path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-  entry: './src/js/main.js',
+  entry: './app/main.js',
   output: {
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js'
   },
   // assumes all JavaScript files you edit will be in src/javascripts
@@ -24,6 +26,23 @@ module.exports = {
           'babel-loader?cacheDirectory&presets[]=react&presets[]=es2015'
         ]
       },
+      {
+        test: /(\.scss|\.css)$/,
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap!resolve-url!sass?sourceMap')
+      },
+      {
+            // ASSET LOADER
+            // Reference: https://github.com/webpack/file-loader
+            // Copy png, jpg, jpeg, gif, svg, woff, woff2, ttf, eot files to output
+            // Rename the file using the asset hash
+            // Pass along the updated reference to your code
+            // You can add here any file extension you want to get copied to your output
+            test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+            loader: 'file'
+        }
     ]
-  }
+  },
+  plugins: [
+        new ExtractTextPlugin('bundle.css', {allChunks: true})
+  ]
 };

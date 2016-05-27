@@ -5,10 +5,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Webpack will find this file in src/helper_module.js
-import {PersonComponent} from 'helper_module';
+import {PersonComponent} from './components/HelperModule';
+
+import './application.scss';
 
 // Use React JSX syntax:
 ReactDOM.render(
-  <PersonComponent myName={"Jan"} myAge={28} />,
+<div>
+  <PersonComponent myName={"Heino"} myAge={89} />
+</div>
+,
   document.getElementById("exampleDiv")
 );

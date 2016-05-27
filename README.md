@@ -1,6 +1,9 @@
 # reactBasicSetup
 This Repo Contains a basic React Setup with npm-modules for React, Babel and Webpack as well as a general project structure.
-Sass and materialize-css have also been added (tbc).
+Also included:
+* [react-fontawesome](https://www.npmjs.com/package/react-fontawesome)
+* [materialize-css](http://materializecss.com/)
+* Sass
 
 ## Information about this Setup from these Tutorials
 
