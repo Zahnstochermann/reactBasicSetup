@@ -31,9 +31,6 @@ export class TaskWidget extends React.Component {
 
   render() {
   	let {tasks} = this.state;
-    if (tasks.length == 0) {
-    	return <div>Loading...</div>;
-    }
 
     let taskHtmlArray = [];
     tasks.forEach(function(item, index) {
