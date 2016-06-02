@@ -25,7 +25,7 @@ export class TaskForm extends React.Component {
           <div className="form-container">
           	<form>
             	<div className="input-field col s6">
-                <input className="validate" type="text" name="firstname" placeholder="add item" value={inputText} onChange={this.handleChange.bind(this)} />
+                <input className="validate" type="text" name="newItem" placeholder="Atdd item" value={inputText} onChange={this.handleChange.bind(this)} />
               </div>
               <button className="waves-effect waves-light btn" type="button" onClick={this.handleButtonClick.bind(this)}>Add</button>
             </form>

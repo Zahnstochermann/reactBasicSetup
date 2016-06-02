@@ -13,7 +13,7 @@ export class TaskItem extends React.Component {
 
   	return (
 			<div className="list-item">
-				<button className="deleteButton btn-floating waves-effect waves-light btn" type="button" onClick={this.handleButtonClick.bind(this)}>-</button>
+				<button className="deleteButton btn-floating waves-effect waves-light" type="button" onClick={this.handleButtonClick.bind(this)}><i className="fa fa-minus"></i></button>
 				<span className="list-item-content">{title}</span>
 			</div>
 		);
